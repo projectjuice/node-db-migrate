@@ -549,6 +549,9 @@ function setDefaultArgv(internals, isModule) {
   .describe('log-level', 'Set the log-level, for example sql|warn')
     .string('log-level')
 
+  .describe('ssl', 'Set add ssl to config ')
+    .string('ssl')
+
   .argv;
 
   if (internals.argv.version) {
